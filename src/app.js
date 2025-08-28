@@ -109,9 +109,10 @@ store.subscribe((s) => {
       <i class="fa-solid fa-minus" data-id="${element.id}" id="btnDec"></i>
       </div>
       
-      
     `;
     cartNavbar.appendChild(ListItem);
+    
+
   });
   cartNavbar.querySelectorAll("i").forEach((btn) => {
     btn.addEventListener("click", () => {

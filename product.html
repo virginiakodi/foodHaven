@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fresh Shop</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="product-page">
+    <div class="container">
+      <div class="overlayCover" id="overlayCover"></div>
+      <div class="cart-aside" id="cart-aside">
+        <div class="cart-heading">
+          <h2 class="cart-header">Shopping Cart</h2>
+          <div class="cart-aside-icon">
+            <i class="fa fa-times" id="cart-aside-icon"></i>
+          </div>
+        </div>
+        <ul id="cartNavbar"></ul>
+        <hr />
+        <!-- <div class="cart-items">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664551734578-fe47fea8cab8?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="fruits"
+          />
+          <p>$12.99 veges</p>
+          <div class="cart-items-icons">
+            <i class="fa-solid fa-plus" id="btnInc"></i>
+            <span class="items-added" id="items-added">1</span>
+            <i class="fa-solid fa-minus" id="btnDec"></i>
+          </div>
+        </div> -->
+        <hr />
+        <div class="checkout">
+          <p class="checkout-total" id="checkout-total">Total:$0.00</p>
+          <button class="checkout-btn">Checkout</button>
+          <button id="clearCartBtn">Clear Cart</button>
+          <p id="parag"></p>
+        </div>
+      </div>
+
+      <div class="heading">
+        <div class="cart-icon" id="cart-icon">
+          <i class="fa-solid fa-cart-shopping cart cart"></i>
+        </div>
+        <div class="product-header">
+          <h1 class="product-title">Farm Fresh Shop</h1>
+          <p class="product-subtitle">
+            Explore our range of fresh, organic, and seasonal produce.
+          </p>
+        </div>
+      </div>
+      <div class="products">
+        <button class="product">All</button>
+        <button class="product">Vegetables</button>
+        <button class="product">Fruits</button>
+        <button class="product">Herbs</button>
+      </div>
+
+      <div class="all-products">
+        <div class="card-container" id="card-container">
+          <!-- <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664551734578-fe47fea8cab8?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="fruits"
+            /> 
+            <div class="card-content">
+              <h3 class="product-name">Fresh Veges</h3>
+              <p class="product-info">
+                Handpicked, organic, and packed with nutrients.
+              </p>
+              <div class="links">
+                <a href="#" class="price">$12.99/kg</a>
+                <a href="#" class="product-btn" id = "product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="fruits"
+            />
+            <div class="card-content">
+              <h3 class="product-name">Seasonal Fruits</h3>
+              <p class="product-info">
+                Sweet and juicy, perfect for a healthy snack.
+              </p>
+              <div class="links">
+                <a href="#" class="price">$8.99/kg</a>
+                <a href="#" class="product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1744659747310-39564f92c25b?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="herbs"
+            />
+            <div class="card-content">
+              <h3 class="product-name">Aromatic Herbs</h3>
+              <p class="product-info">
+                Perfect for cooking and natural remedies.
+              </p>
+              <div class="links">
+                <a href="#" class="price">$5.99/bunch</a>
+                <a href="#" class="product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1701967601592-84bbf09c30d3?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="eggs"
+            />
+            <div class="card-content">
+              <h3 class="product-name">Organic Eggs</h3>
+              <p class="product-info">Free-range eggs from happy hens.</p>
+              <div class="links">
+                <a href="#" class="price">$4.99/dozen</a>
+                <a href="#" class="product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1639151082235-406d8eb262b9?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="milk"
+            />
+            <div class="card-content">
+              <h3 class="product-name">Farm-Fresh Milk</h3>
+              <p class="product-info">
+                Rich and creamy milk from grass-fed cows.
+              </p>
+              <div class="links">
+                <a href="#" class="price">$3.99/liter</a>
+                <a href="#" class="product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="honey"
+            />
+            <div class="card-content">
+              <h3 class="product-name">Pure Honey</h3>
+              <p class="product-info">
+                Unprocessed, raw honey straight from the hive.
+              </p>
+              <div class="links">
+                <a href="#" class="price">$14.99/jar</a>
+                <a href="#" class="product-btn">Add to Cart</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

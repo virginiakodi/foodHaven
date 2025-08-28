@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="ptag"></p>
+    <button id="incr">+</button>
+    <button id="decr">-</button>
+  </body>
+
+  <script>
+    const pTag = document.getElementById("ptag");
+    const incr = document.getElementById("incr");
+    const decr = document.getElementById("decr");
+
+    function createStore(initialState) {
+      let state = initialState;
+      const listener = [];
+      return {
+        getState() {
+          return state;
+        },
+        setState(newState) {
+          state = { ...state, ...newState };
+          listener.forEach((fn) => fn(state));
+        },
+        subscribe(fn) {
+          listener.push(fn);
+          fn(state);
+        },
+      };
+    }
+
+    // createStore()
+    const store = createStore({ count: 0 });
+    // subscribe
+    store.subscribe((state) => {
+      pTag.innerText = state.count;
+    });
+    // usestate
+    incr.addEventListener("click", () => {
+      store.setState({ count: store.getState().count + 1 });
+    });
+    decr.addEventListener("click", () => {
+      store.setState({ count: store.getState().count - 1 });
+    });
+  </script>
+</html>

@@ -44,7 +44,6 @@ a {
 
 .tags {
   width: 70%;
-  
 }
 .tags ul {
   display: flex;
@@ -52,7 +51,6 @@ a {
   justify-content: center;
   gap: 20px;
   font-size: 15px;
-  
 }
 .tags ul li a {
   text-decoration: none;
@@ -263,12 +261,12 @@ a {
 }
 
 /* phoneview */
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .navbar {
     position: relative;
   }
-  .overlayCover{
-   width: 100vw;
+  .overlayCover {
+    width: 100vw;
     height: 100vh;
     left: 0;
     top: 0;
@@ -276,12 +274,11 @@ a {
     z-index: 1000;
     position: fixed;
     background-color: rgba(6, 1, 0, 0.567);
-    
+
     /* background-color: black; */
   }
-  .overlayCover.active{
+  .overlayCover.active {
     display: block;
-
   }
   .aside {
     position: fixed;
@@ -311,9 +308,9 @@ a {
     padding: 5px 8px;
     border-radius: 10px;
     cursor: pointer;
-    color: rgb(7, 90, 222);;
+    color: rgb(7, 90, 222);
   }
-  .aside-icon:hover{
+  .aside-icon:hover {
     background-color: #d1d5db;
     border-radius: 100px;
   }
@@ -336,7 +333,6 @@ a {
   }
 
   .tags > ul li {
-   
     text-align: start;
     width: 100%;
     padding: 10px;
@@ -355,7 +351,6 @@ a {
     display: flex;
     width: 100%;
     flex-direction: column;
-    
   }
 
   .btn > button {
@@ -366,7 +361,7 @@ a {
     color: #d1d5db;
     border: 1px solid #d1d5db;
   }
-  .btn > button:hover{
+  .btn > button:hover {
     background-color: rgb(37, 93, 247);
   }
   .icon {
@@ -376,87 +371,86 @@ a {
   .fa {
     font-size: 25px;
     cursor: pointer;
-    
   }
-  .fa:hover{
+  .fa:hover {
     color: rgb(7, 90, 222);
   }
-.text h1 {
-  font-size: 38px;
-  font-weight: bolder;
-}
-.text p {
-  font-size: 16px;
-}
-.main {
-  background-color: rgb(229, 228, 228);
-  padding: 2rem 1rem 5rem 1rem;
-}
-.main-text {
-  text-align: center;
-  margin: 2rem;
-}
-.main-text h1 {
-  font-size: 22px;
-}
-.main-text p {
-  font-size: 12px;
-  color: gray;
-}
+  .text h1 {
+    font-size: 38px;
+    font-weight: bolder;
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .main {
+    background-color: rgb(229, 228, 228);
+    padding: 2rem 1rem 5rem 1rem;
+  }
+  .main-text {
+    text-align: center;
+    margin: 2rem;
+  }
+  .main-text h1 {
+    font-size: 22px;
+  }
+  .main-text p {
+    font-size: 12px;
+    color: gray;
+  }
 
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.col {
-  width: 100%;
-  height: 400px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 10px 18px 5px rgb(204, 203, 203);
-}
-.col img {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-.col-text {
-  padding: 2rem;
-}
-.col-text h1 {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(63, 59, 59);
-}
-.col-text p {
-  color: rgb(83, 83, 83);
-}
-.col-text button {
-  background-color: rgb(37, 93, 247);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  color: white;
-  margin-top: 1rem;
-}
-.col-text button:hover {
-  background-color: rgb(7, 49, 164);
-}
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .col {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 18px 5px rgb(204, 203, 203);
+  }
+  .col img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .col-text {
+    padding: 2rem;
+  }
+  .col-text h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63, 59, 59);
+  }
+  .col-text p {
+    color: rgb(83, 83, 83);
+  }
+  .col-text button {
+    background-color: rgb(37, 93, 247);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    margin-top: 1rem;
+  }
+  .col-text button:hover {
+    background-color: rgb(7, 49, 164);
+  }
 
-.about-us {
-  text-align: center;
-  padding: 3rem;
-}
-.about-us h1 {
-  color: rgb(57, 57, 57);
-  font-size: 22px;
-}
-.about-us p {
-  color: rgb(134, 133, 133);
-  font-size: 13px;
-}
+  .about-us {
+    text-align: center;
+    padding: 3rem;
+  }
+  .about-us h1 {
+    color: rgb(57, 57, 57);
+    font-size: 22px;
+  }
+  .about-us p {
+    color: rgb(134, 133, 133);
+    font-size: 13px;
+  }
 }
